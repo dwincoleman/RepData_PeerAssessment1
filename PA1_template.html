@@ -94,7 +94,7 @@ hist(tot$steps,breaks=12)</code></pre>
 </div>
 <div id="what-is-the-average-daily-activity-pattern" class="section level2">
 <h2>What is the average daily activity pattern?</h2>
-<p>We average over days the number of steps taken for each 5-minute interval, making th eresuklts into a time series and plotting it. We identify which interval has the maximum; it turns out to be the one starting at 0835.</p>
+<p>We average over days the number of steps taken for each 5-minute interval, making the results into a time series and plotting it. We identify which interval has the maximum; it turns out to be the one starting at 0835.</p>
 <pre class="r"><code>ave&lt;-aggregate(steps~interval,data=df,mean)
 tsa&lt;-ts(ave$steps)
 plot.ts(tsa)</code></pre>
