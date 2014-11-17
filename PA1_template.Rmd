@@ -43,7 +43,7 @@ summary(tot)
 ```
 
 ## What is the average daily activity pattern?
-We average over days the number of steps taken for each 5-minute interval, making th eresuklts into a time series and plotting it. We identify which interval has the maximum; it turns out to be the one starting at 0835.
+We average over days the number of steps taken for each 5-minute interval, making the results into a time series and plotting it. We identify which interval has the maximum; it turns out to be the one starting at 0835.
 
 ```{r,echo=TRUE}
 ave<-aggregate(steps~interval,data=df,mean)
